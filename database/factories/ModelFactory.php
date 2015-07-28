@@ -28,7 +28,7 @@ $factory->define(App\Flyer::class, function (Faker\Generator $faker) {
         'country'       => $faker->country,
         'state'         => $faker->state,
         'price'         => $faker->numberBetween(10000, 5000000),
-        'description'   => $faker->paragraphs(3),
+        'description'   => $faker->paragraph(3),
     ];
 });
 
