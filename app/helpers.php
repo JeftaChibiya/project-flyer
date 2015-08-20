@@ -1,6 +1,12 @@
 <?php
 
-function flash($title = null, $message = null)
+/**
+ * Flash Helper
+ * @param  string|null  $title
+ * @param  string|null  $text
+ * @return void
+ */
+function flash($title = null, $text = null)
 {
     $flash = app('App\Http\Flash');
 
@@ -8,5 +14,5 @@ function flash($title = null, $message = null)
         return $flash;
     }
 
-    return $flash->info($title, $message);
+    return $flash->info($title, $text);
 }
