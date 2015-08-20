@@ -26,7 +26,7 @@ class FlyersController extends Controller
      */
     public function create()
     {
-        flash('Create a Flyer');
+        flash('Create', 'Create a Flyer');
         return view('flyers.create');
     }
 
